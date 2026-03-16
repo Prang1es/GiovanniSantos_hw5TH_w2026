@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grizzly Prime Dealership</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/usedCars.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Grizzly Prime Dealership</h1>
+    </header>
+
+    <div class="container">
+        <aside class="filters">
+            <h3>Search Inventory</h3>
+            
+            <div class="filter-group">
+                <label>Year Range</label>
+                <div class="range-inputs">
+                    <input type="number" id="minYear" placeholder="Min Year">
+                    <input type="number" id="maxYear" placeholder="Max Year">
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label>Max Price ($)</label>
+                <input type="number" id="priceRange" placeholder="e.g. 25000" value="70000">
+            </div>
+
+            <div class="filter-group">
+                <label>Max Mileage</label>
+                <input type="number" id="maxMileage" placeholder="e.g. 50000">
+            </div>
+
+            <div class="filter-group">
+                <label>Make</label>
+                <div id="makeList" class="scroll-box"></div>
+            </div>
+
+            <div class="filter-group">
+                <label>Color</label>
+                <div id="colorList" class="scroll-box"></div>
+            </div>
+
+            <button id="resetBtn">Reset All Filters</button>
+        </aside>
+
+        <main id="carContainer">
+            </main>
+    </div>
+</body>
+</html>
