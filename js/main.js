@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = 'card';
             card.innerHTML = `
-                <img src="${carImg}" alt="${car.make}" style="width:100%">
+                <img src="${car.image}" alt="${car.make}" style="width:100%">
                 <h1>${car.year} ${car.make}</h1>
                 <p class="price">$${car.price.toLocaleString()}</p>
                 <p>${car.model} • ${car.mileage.toLocaleString()} miles</p>
